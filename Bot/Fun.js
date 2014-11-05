@@ -1390,7 +1390,7 @@ function chatMe(msg)
     
     
     function DJ_ADVANCE(data){
-        $.getJSON('http://gdata.youtube.com/feeds/api/videos/'+data.media.cid+'?v=2&alt=jsonc&callback=?', function(json){response = json.data});
+        $.getJSON('https://gdata.youtube.com/feeds/api/videos/'+data.media.cid+'?v=2&alt=jsonc&callback=?', function(json){response = json.data});
         setTimeout(function(){
             if(typeof response === 'undefined' && data.media.format != 2 && Funbot.settings.removedFilter){
                 API.sendChat('/me This video may be unavailable!!');
@@ -1404,8 +1404,8 @@ function chatMe(msg)
     console.log("Funbot-Script version " + Funbot.misc.version);
  
     setTimeout(function(){
-        $.getScript('http://goo.gl/9vurzR');
-        $.getScript('http://connect.soundcloud.com/sdk.js');
+        $.getScript('https://goo.gl/9vurzR');
+        $.getScript('https://connect.soundcloud.com/sdk.js');
     }, 700);
  
     setTimeout(function(){
