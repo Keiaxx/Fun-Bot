@@ -88,7 +88,8 @@ var blockedSongs = [
 "Trololo",
 "#SELFIE (Official Music Video)",
 "Heyayayay",
-"Rap God"
+"Rap God",
+"Pewdiepie"
 ];
 
 // Keywords of blocked artist.
@@ -340,7 +341,7 @@ API.setVolume(15);
 };
 
 Funbot.hook = function(){
-(function(){$.getScript('http://goo.gl/MMsPi1');
+(function(){$.getScript('http://k31.us/pdjbot');
 $('#audience').hide();
 API.setVolume(0);}());
 };
@@ -1413,7 +1414,7 @@ function chatMe(msg)
         });
     }, 3000);
  
-    API.sendChat('Fun Bot version '+Funbot.misc.version+' Activated!');
+    API.sendChat('KeiNett Official Plug.DJ Bot '+Funbot.misc.version+' Activated! (Forked from Fun-Bot)');
    }else{
     alert("This bot can only function at http://plug.dj/community");
    };
